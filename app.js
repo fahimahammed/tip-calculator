@@ -4,8 +4,6 @@ const handleCalculation = () => {
     const inputBill = parseInt(document.getElementById('input-bill').value);
     const inputTip = parseInt(document.getElementById('input-tip').value);
     const inputPerson = parseInt(document.getElementById('input-person').value);
-    
-    // console.log(validateInput(inputBill));
 
     if(validateInput(inputBill) && validateInput(inputTip) && validateInput(inputPerson)){
         warning.innerText = '';
@@ -20,12 +18,11 @@ const handleCalculation = () => {
     else{
         warning.innerText = 'Please enter valid amount.';
     }
-
-}
+};
 
 const validateInput = (input) => {
     return (/^\d+$/).test(input);
-}
+};
 
 const handleReset = () => {
     warning.innerText = '';
@@ -35,4 +32,4 @@ const handleReset = () => {
     document.getElementById('total-tip').innerText = '0.00';
     document.getElementById('per-person-bill').innerText = '0.00';
     document.getElementById('total-bill').innerText = '0.00';
-}
+};
