@@ -19,15 +19,15 @@
                     <thead>
                       <tr>
                         <th scope="col">Total Tip</th>
-                        <th scope="col" id='total-tip'></th>
+                        <th scope="col" id='total-tip'>0.00</th>
                       </tr>
                       <tr>
                         <th scope="col">Per Person Bill </th>
-                        <th scope="col" id="per-person-bill"></th>
+                        <th scope="col" id="per-person-bill">0.00</th>
                       </tr>
                       <tr>
                         <th scope="col">Total Bill</th>
-                        <th scope="col" id='total-bill'></th>
+                        <th scope="col" id='total-bill'>0.00</th>
                       </tr>
                     </thead>
                   </table>
@@ -39,8 +39,9 @@
                 <input type="text" id="input-tip" class='form-control m-2 w-50'>
                 <h6>PERSON</h6>
                 <input type="text" id="input-person" class='form-control m-2 w-50'>
+                <p class="text-danger" id='warning'></p>
                 <button onclick="handleCalculation()" class="btn btn-success m-2">Calculate</button>
-                <button class="btn btn-dark m-2">Reset</button>
+                <button onclick="handleReset()" class="btn btn-dark m-2">Reset</button>
             </div>
         </div>
     </section>
