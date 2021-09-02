@@ -1,1 +1,5 @@
-# tip-calculator
+# Tip Calculator
+
+#### Programming Language: JavaScript
+
+
