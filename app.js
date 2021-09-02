@@ -1,5 +1,7 @@
+// error message
 const warning = document.getElementById('warning');
 
+// calculation function
 const handleCalculation = () => {
     const inputBill = parseInt(document.getElementById('input-bill').value);
     const inputTip = parseInt(document.getElementById('input-tip').value);
@@ -20,10 +22,12 @@ const handleCalculation = () => {
     }
 };
 
+// input validation
 const validateInput = (input) => {
     return (/^\d+$/).test(input);
 };
 
+// handle reset button
 const handleReset = () => {
     warning.innerText = '';
     document.getElementById('input-bill').value = '';
