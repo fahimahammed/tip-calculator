@@ -13,20 +13,33 @@
 <body>
     <section class="container p-3 mt-5">
         <div class="row d-flex justify-content-between">
-            <div class="col-md-6 bg-info">
-                <h3>Tip Calculator</h3>
-                <h4>Total Tip: </h4>
-                <h4>Per Person Bill: </h4>
-                <h4>Total Bill: </h4>
+            <div class="col-md-6 p-5 border">
+                <h3 class="text-center text-success">Tip Calculator</h3> <hr>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Total Tip</th>
+                        <th scope="col" id='total-tip'></th>
+                      </tr>
+                      <tr>
+                        <th scope="col">Per Person Bill </th>
+                        <th scope="col" id="per-person-bill"></th>
+                      </tr>
+                      <tr>
+                        <th scope="col">Total Bill</th>
+                        <th scope="col" id='total-bill'></th>
+                      </tr>
+                    </thead>
+                  </table>
             </div>
-            <div class="col-md-5 bg-light ps-5">
+            <div class="col-md-5 border p-5">
                 <h6>BILL</h6>
                 <input type="text" id="input-bill" class='form-control m-2 w-50'>
                 <h6>TIP %</h6>
                 <input type="text" id="input-tip" class='form-control m-2 w-50'>
                 <h6>PERSON</h6>
                 <input type="text" id="input-person" class='form-control m-2 w-50'>
-                <button class="btn btn-success m-2">Calculate</button>
+                <button onclick="handleCalculation()" class="btn btn-success m-2">Calculate</button>
                 <button class="btn btn-dark m-2">Reset</button>
             </div>
         </div>
