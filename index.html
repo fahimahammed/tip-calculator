@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <section class="container p-3 mt-5">
+        <div class="row d-flex justify-content-between">
+            <div class="col-md-6 bg-info">
+                <h3>Tip Calculator</h3>
+                <h4>Total Tip: </h4>
+                <h4>Per Person Bill: </h4>
+                <h4>Total Bill: </h4>
+            </div>
+            <div class="col-md-5 bg-light ps-5">
+                <h6>BILL</h6>
+                <input type="text" id="input-bill" class='form-control m-2 w-50'>
+                <h6>TIP %</h6>
+                <input type="text" id="input-tip" class='form-control m-2 w-50'>
+                <h6>PERSON</h6>
+                <input type="text" id="input-person" class='form-control m-2 w-50'>
+                <button class="btn btn-success m-2">Calculate</button>
+                <button class="btn btn-dark m-2">Reset</button>
+            </div>
+        </div>
+    </section>
+
+    <!--JS Link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
